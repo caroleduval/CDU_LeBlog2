@@ -15,10 +15,10 @@ class PostManager
     {
         if (self::$bdd === null)
         {
-            $host_name = 'localhost';           //'db701137160.db.1and1.com';
-            $database = 'CDu_LeBlog';           //'db701137160';
-            $user_name = 'root';                //'dbo701137160';
-            $password = 'root';                 //'Kdu77b30$';
+            $host_name = '######';
+            $database  = '######';
+            $user_name = '######';
+            $password  = '######';
             self::$bdd  = new PDO("mysql:host=$host_name; dbname=$database;charset=UTF8", $user_name, $password,
                 array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION));
         }
